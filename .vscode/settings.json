@@ -1,0 +1,8 @@
+{
+    "es6-css-minify.cssMinPath": "/assets/css/min",
+    "es6-css-minify.jsMinPath": "\\assets\\js\\min",
+    "docwriter.progress.trackClasses": true,
+    "cSpell.words": [
+        "fullname"
+    ]
+}

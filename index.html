@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFNodes - a simpler way to batch process ffmpeg</title>
+    <link rel="stylesheet" href="/assets/css/min/main.min.css">
+    <link rel="stylesheet" href="/assets/css/min/scrollbar.min.css">
+    <link rel="shortcut icon" href="/assets/images/Icon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="/assets/libraries/jquery.js"></script>
+</head>
+
+<body>
+    <div id="landing" class="center horizontal vertical col">
+        <img src="/assets/images/Logo.svg" alt="FFNodes">
+        <div id="cta" class="row">
+            <a id="download-latest-button" href="#" class="primary button fill">Download Latest <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10.5004 12H5.00043M4.91577 12.2915L2.58085 19.2662C2.39742 19.8142 2.3057 20.0881 2.37152 20.2569C2.42868 20.4034 2.55144 20.5145 2.70292 20.5567C2.87736 20.6054 3.14083 20.4869 3.66776 20.2497L20.3792 12.7296C20.8936 12.4981 21.1507 12.3824 21.2302 12.2216C21.2993 12.082 21.2993 11.9181 21.2302 11.7784C21.1507 11.6177 20.8936 11.5019 20.3792 11.2705L3.66193 3.74776C3.13659 3.51135 2.87392 3.39315 2.69966 3.44164C2.54832 3.48375 2.42556 3.59454 2.36821 3.74078C2.30216 3.90917 2.3929 4.18255 2.57437 4.72931L4.91642 11.7856C4.94759 11.8795 4.96317 11.9264 4.96933 11.9744C4.97479 12.0171 4.97473 12.0602 4.96916 12.1028C4.96289 12.1508 4.94718 12.1977 4.91577 12.2915Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+            <a href="#versions" class="secondary button fill">Versions <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M20.5 8V16.2C20.5 17.8802 20.5 18.7202 20.173 19.362C19.8854 19.9265 19.4265 20.3854 18.862 20.673C18.2202 21 17.3802 21 15.7 21H8.3C6.61984 21 5.77976 21 5.13803 20.673C4.57354 20.3854 4.1146 19.9265 3.82698 19.362C3.5 18.7202 3.5 17.8802 3.5 16.2V8M3.6 3H20.4C20.9601 3 21.2401 3 21.454 3.10899C21.6422 3.20487 21.7951 3.35785 21.891 3.54601C22 3.75992 22 4.03995 22 4.6V6.4C22 6.96005 22 7.24008 21.891 7.45399C21.7951 7.64215 21.6422 7.79513 21.454 7.89101C21.2401 8 20.9601 8 20.4 8H3.6C3.03995 8 2.75992 8 2.54601 7.89101C2.35785 7.79513 2.20487 7.64215 2.10899 7.45399C2 7.24008 2 6.96005 2 6.4V4.6C2 4.03995 2 3.75992 2.10899 3.54601C2.20487 3.35785 2.35785 3.20487 2.54601 3.10899C2.75992 3 3.03995 3 3.6 3ZM9.6 11.5H14.4C14.9601 11.5 15.2401 11.5 15.454 11.609C15.6422 11.7049 15.7951 11.8578 15.891 12.046C16 12.2599 16 12.5399 16 13.1V13.9C16 14.4601 16 14.7401 15.891 14.954C15.7951 15.1422 15.6422 15.2951 15.454 15.391C15.2401 15.5 14.9601 15.5 14.4 15.5H9.6C9.03995 15.5 8.75992 15.5 8.54601 15.391C8.35785 15.2951 8.20487 15.1422 8.10899 14.954C8 14.7401 8 14.4601 8 13.9V13.1C8 12.5399 8 12.2599 8.10899 12.046C8.20487 11.8578 8.35785 11.7049 8.54601 11.609C8.75992 11.5 9.03995 11.5 9.6 11.5Z" stroke="#1B1D1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+        </div>
+    </div>
+
+    <article>
+        <div class="col">
+            <h1>Authentication</h1>
+            <p>The authentication system for FFNodes is elegantly straightforward, providing a seamless and secure user experience. When users attempt to access FFNodes, they are required to provide only two essential pieces of information: their username and an encrypted connection link. This minimalist approach prioritizes user convenience without compromising on security. The username ensures personalized access, while the encrypted connection link serves as a robust authentication token, effectively shielding against unauthorized entry. Together, these elements create a robust yet user-friendly authentication system, embodying FFNodes' commitment to simplicity and security for its users. The login page is as depicted on the left.</p>
+        </div>
+        <img src="/assets/images/login.png" alt="">
+    </article>
+    <article>
+        <div class="col">
+            <h1>Dashboard</h1>
+            <p>The FFNodes dashboard is a user-friendly hub that effortlessly guides users through their tasks while providing vital information at a glance. Its intuitive design ensures ease of use, offering a clear display of the remaining processes and real-time progress. Users can easily track their ongoing operations, making efficient use of their resources. One standout feature is its auto-detection of the GPU, a time-saving innovation that suggests the optimal codec based on the user's hardware. This tailored recommendation maximizes efficiency and minimizes errors. Furthermore, FFNodes empowers users with the ability to run concurrent processes, harnessing the full potential of their system and streamlining their workflow. With FFNodes, simplicity meets functionality, providing users with a seamless and productive experience.</p>
+        </div>
+        <img src="/assets/images/Dashboard.png" alt="">
+    </article>
+    <article>
+        <div class="col">
+            <h1>Users</h1>
+            <p>The user dashboard for server owners in FFNodes is a powerful yet straightforward tool, offering comprehensive insights and control over client activities. With just a glance, server owners can access a detailed overview of all authorized clients and users, complete with data processing statistics, active hours, and processed file counts. A history log of all past processes keeps a record of system activities. Should the need arise, server owners can easily manage client access by initiating kicks or revoking permissions. The dashboard also provides a unique connection code for secure access, formatted as "ffn://example.com/sha256_hashed_code," ensuring a secure and straightforward connection process. FFNodes empowers server owners with the transparency and control they need to effectively manage their operations while maintaining security and efficiency.</p>
+        </div>
+        <img src="/assets/images/Users - Popup.png" alt="">
+    </article>
+    <article id="versions" class="loading">
+        <h1>Versions</h1>
+        <div class="list">
+        </div>
+    </article>
+
+    <footer>
+        <div class="col">
+            <img src="https://lfinteractive.net/assets/img/logo.svg" alt="" width="100px">
+            <p>A company dedicated to making elegant and useful software</p>
+            <p>&copy;2023 <b>LFInteractive LLC.</b></p>
+        </div>
+        <div class="col">
+            <b>SITEMAP</b>
+            <a href="/">Home</a>
+            <a href="/legal/privacy">Privacy Policy</a>
+            <a href="/legal/tos">Terms of Service</a>
+            <a href="https://github.com/dcmanproductions/ffnodes" target="_blank">GitHub</a>
+            <a href="https://lfinteractive.net" target="_blank">Main Site</a>
+        </div>
+        <div class="col">
+            <b>HELP</b>
+            <a href="https://docs.lfinteractive.net/ffnodes/getting-started" target="_blank">Getting Started</a>
+            <a href="https://github.com/dcmanproductions/ffnodes/issues" target="_blank">Issues</a>
+            <a href="https://docs.lfinteractive.net/ffnodes/" target="_blank">Documentation</a>
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/versions.js"></script>
+</body>
+
+</html>

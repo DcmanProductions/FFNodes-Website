@@ -1,0 +1,234 @@
+:root {
+    --Background: hsla(0, 0%, 4%, 1);
+    --Primary: hsla(0, 88%, 56%, 1);
+}
+
+
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    background-color: var(--Background, #0B0B0B);
+    color: white;
+}
+
+.row, .center, .col, .grid {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.center.horizontal {
+    align-items: center;
+}
+
+.center.vertical {
+    justify-content: center;
+}
+
+
+
+a:not(.button) {
+    color: var(--Primary);
+    text-decoration: none;
+}
+
+a:not(.button):hover {
+    text-decoration: underline;
+}
+
+.fill {
+    width: 100%;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+}
+
+.button, button {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    transition: filter, box-shadow, transform;
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 0px 0px #EC2B35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button svg, button svg {
+    margin: 0 1rem;
+}
+
+.button:hover, button:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0px 0px hsl(357, 84%, 45%);
+}
+
+.button.primary, button.primary {
+    background-color: var(--Primary);
+    color: white;
+}
+
+.button.secondary, button.secondary {
+    background-color: white;
+    color: black;
+}
+
+#landing {
+    height: 100vh;
+    background-image: url('/assets/images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#landing>img {
+    width: 75vw;
+    max-width: 800px;
+}
+
+#landing #cta {
+    width: 50%;
+    max-width: 500px;
+}
+
+article {
+    margin: 2rem;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+article>* {
+    width: calc(50% - 2rem);
+    margin: 1rem;
+}
+
+article h1 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+}
+
+article h1::before {
+    content: '';
+    position: absolute;
+    background-color: var(--Primary);
+    height: 6px;
+    width: 100%;
+    bottom: 0;
+    border-radius: 100px;
+}
+
+article p {
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 250%;
+}
+
+article img {
+    box-shadow: 10px 10px 0px 0px var(--Primary);
+    min-width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+article#versions {
+    margin: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 300px;
+    flex-direction: column;
+}
+
+.list {
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.50) inset;
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.version-item {
+    background: #262626;
+    border-radius: 6px;
+    margin: 1rem;
+    padding: 1rem;
+    transition: filter, box-shadow, transform;
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 0px 0px #EC2B35;
+    cursor: default;
+}
+
+.version-item .button {
+    margin: 0 1rem;
+}
+
+.version-item .button svg {
+    margin: 0;
+}
+
+.version-item:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0px 0px hsl(357, 84%, 45%);
+}
+
+.version-item .release-type {
+    background: white;
+    color: #000;
+    width: 44.325px;
+    height: 44.325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 4px;
+    box-shadow: 0px 3px 0px 0px hsl(357, 84%, 45%);
+    margin-right: 10px;
+    cursor: default;
+}
+
+.version-item .release-type.release {
+    background: #2BF17A;
+}
+
+.version-item .release-type.beta {
+    background: #2BD9F1;
+}
+
+.version-item .release-type.alpha {
+    background: #A6F12B;
+}
+
+footer {
+    background: #18191B;
+    display: flex;
+    height: 289px;
+    padding: 40px 50px;
+    align-items: center;
+    gap: 53px;
+}
